@@ -21,8 +21,8 @@ export const menuItem = [
   },
   {
     id: 5,
-    menuName: "FAQ",
-    linkMenu: "faq",
+    menuName: "Gallery",
+    linkMenu: "gallery",
   },
 ];
 

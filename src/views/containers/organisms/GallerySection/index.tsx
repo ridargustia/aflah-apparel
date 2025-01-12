@@ -32,7 +32,7 @@ const GallerySection = () => {
           <div className="lg:py-24 py-16 mx-auto max-w-[1280px]">
             <div className="flex flex-col items-center">
               <h2 className="text-5xl text-center font-bold tracking-wide text-blue-950">
-                Our Gallery
+                Our Product
               </h2>
               <p className="mt-4 max-w-[25rem] text-center font-medium text-gray-500">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -98,7 +98,7 @@ const GallerySection = () => {
             height="600"
             viewBox="0 0 600 600"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute top-0 left-0 -z-10 w-48 h-48 opacity-25 -translate-x-32 scale-100"
+            className="absolute top-0 left-0 -z-10 w-48 h-48 opacity-15 -translate-x-32 md:scale-100 scale-75"
           >
             <g transform="translate(300,300)">
               <path
@@ -112,7 +112,7 @@ const GallerySection = () => {
             height="600"
             viewBox="0 0 600 600"
             xmlns="http://www.w3.org/2000/svg"
-            className="absolute bottom-0 right-0 -z-10 w-48 h-48 opacity-25 translate-x-36 scale-90"
+            className="absolute bottom-0 right-0 -z-10 w-48 h-48 opacity-15 translate-x-36 md:scale-90 scale-75"
           >
             <g transform="translate(300,300)">
               <path
