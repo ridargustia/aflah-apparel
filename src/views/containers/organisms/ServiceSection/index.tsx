@@ -17,7 +17,11 @@ const ServiceSection = () => {
               </p>
             </div>
             <div className="mt-16 flex flex-wrap flex-row md:justify-between justify-center w-full">
-              <div className="lg:w-1/3 md:w-1/2 max-w-[24rem]">
+              <div
+                className="lg:w-1/3 md:w-1/2 max-w-[24rem]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+              >
                 <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
                   <div className="shrink-0 rounded-full border p-5 text-center">
                     <LiaTshirtSolid className="text-3xl text-indigo-600" />
@@ -33,7 +37,12 @@ const ServiceSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-1/3 md:w-1/2 max-w-[24rem]">
+              <div
+                className="lg:w-1/3 md:w-1/2 max-w-[24rem]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="100"
+              >
                 <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
                   <div className="shrink-0 rounded-full border p-5 text-center">
                     <LiaTshirtSolid className="text-3xl text-indigo-600" />
@@ -49,7 +58,12 @@ const ServiceSection = () => {
                   </div>
                 </div>
               </div>
-              <div className="lg:w-1/3 md:w-1/2 max-w-[24rem]">
+              <div
+                className="lg:w-1/3 md:w-1/2 max-w-[24rem]"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="200"
+              >
                 <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
                   <div className="shrink-0 rounded-full border p-5 text-center">
                     <LiaTshirtSolid className="text-3xl text-indigo-600" />

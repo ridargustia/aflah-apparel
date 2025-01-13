@@ -5,8 +5,14 @@ import HeroSection from "@/views/containers/organisms/HeroSection";
 import ServiceSection from "@/views/containers/organisms/ServiceSection";
 import Head from "next/head";
 import icon from "../../public/assets/images/company/company-logo.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>

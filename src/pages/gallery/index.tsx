@@ -14,10 +14,19 @@ const GalleryPage = () => {
   return (
     <AppShell>
       <div className="flex flex-col items-center md:px-10 px-0 pt-10">
-        <h2 className="text-3xl text-center font-bold tracking-wide text-blue-950">
+        <h2
+          className="text-3xl text-center font-bold tracking-wide text-blue-950"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
           Our Gallery
         </h2>
-        <p className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm">
+        <p
+          className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
+        >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus.
         </p>
       </div>
@@ -28,6 +37,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery1}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="100"
         />
         <Image
           width={200}
@@ -35,6 +47,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery2}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="200"
         />
         <Image
           width={200}
@@ -42,6 +57,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery3}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
         />
         <Image
           width={200}
@@ -49,6 +67,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery4}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="400"
         />
         <Image
           width={200}
@@ -56,6 +77,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery5}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="500"
         />
         <Image
           width={200}
@@ -63,6 +87,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery6}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="600"
         />
         <Image
           width={200}
@@ -70,6 +97,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery7}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="700"
         />
         <Image
           width={200}
@@ -77,6 +107,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery1}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="800"
         />
         <Image
           width={200}
@@ -84,6 +117,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery2}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="900"
         />
         <Image
           width={200}
@@ -91,6 +127,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery3}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1000"
         />
         <Image
           width={200}
@@ -98,6 +137,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery4}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1100"
         />
         <Image
           width={200}
@@ -105,6 +147,9 @@ const GalleryPage = () => {
           className="w-full size-40 object-cover rounded-md"
           src={exampleGallery5}
           alt="Gallery Image"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="1200"
         />
       </div>
     </AppShell>

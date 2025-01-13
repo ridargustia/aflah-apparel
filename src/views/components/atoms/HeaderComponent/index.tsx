@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React from "react";
 import companyLogo from "../../../../../public/assets/images/company/company-logo.png";
 import { IoMenu } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
@@ -7,8 +7,6 @@ import { menuItem } from "@/utils/data/static";
 import Link from "next/link";
 import MobileMenuComponent from "../MobileMenuComponent";
 import { setToggleMenu } from "@/lib/redux/actions/ToggleMenuSlice";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const HeaderComponent = () => {
   const dispatch = useDispatch();
@@ -16,19 +14,17 @@ const HeaderComponent = () => {
     (state: any) => state.changeColorHeader.data
   );
 
-  useEffect(() => {
-    AOS.init();
-  }, []);
-
   return (
     <header
       className={`w-full max-w-none pt-0 sm:px-20 px-10 mx-auto flex items-center justify-between top-0 left-0 fixed ${
         isColorHeader ? "bg-slate-600" : ""
       }`}
-      data-aos="fade-down"
-      data-aos-duration="1000"
     >
-      <div className="flex flex-1 items-center justify-between py-4">
+      <div
+        className="flex flex-1 items-center justify-between py-4"
+        data-aos="fade-down"
+        data-aos-duration="1000"
+      >
         <Link
           href="#"
           className="flex items-center text-gray-100 font-semibold ml-0 text-2xl my-0 mx-6 border-transparent tracking-wide no-underline"

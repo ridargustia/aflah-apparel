@@ -25,10 +25,19 @@ const CustomJerseyPage = () => {
     <AppShell>
       <div className="md:px-10 px-0 pt-10">
         <div className="flex flex-col items-center">
-          <h2 className="text-3xl text-center font-bold tracking-wide text-blue-950">
+          <h2
+            className="text-3xl text-center font-bold tracking-wide text-blue-950"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
             Custom Jersey
           </h2>
-          <p className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm">
+          <p
+            className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus.
           </p>
         </div>
@@ -37,6 +46,9 @@ const CustomJerseyPage = () => {
             <div
               key={data.id}
               className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full lg:px-2 sm:px-1 px-0 py-9"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay={data.id * 100}
             >
               <div className="w-full max-w-full">
                 <Image

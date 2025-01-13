@@ -2,15 +2,9 @@ import React, { useEffect } from "react";
 import HeaderComponent from "@/views/components/atoms/HeaderComponent";
 import { useDispatch } from "react-redux";
 import { setChangeColorHeader } from "@/lib/redux/actions/ChangeColorHeaderSlice";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const HeroSection = () => {
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    AOS.init();
-  }, []);
 
   const changeBackgroundColor = () => {
     if (window.scrollY > 10) {

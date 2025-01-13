@@ -1,14 +1,19 @@
 import Head from "next/head";
-import React from "react";
+import React, { useEffect } from "react";
 import icon from "../../../../../public/assets/images/company/company-logo.png";
 import Navbar from "@/views/components/molecules/Navbar";
 import FooterSection from "../../organisms/FooterSection";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 type AppShellProps = {
   children: React.ReactNode;
 };
 
 const AppShell = ({ children }: AppShellProps) => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <>
       <Head>
