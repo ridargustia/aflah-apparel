@@ -26,6 +26,7 @@ const MobileMenuComponent = () => {
             key={item.id}
             href={`/${item.linkMenu}`}
             className="my-2 border-b-2 border-transparent pb-1 text-lg font-medium tracking-wide"
+            onClick={() => dispatch(setToggleMenu(false))}
           >
             {item.menuName}
           </Link>
