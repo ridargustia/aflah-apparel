@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.5.0",
+    "aos": "^3.0.0-beta.6",
     "next": "14.0.3",
     "preline": "^2.7.0",
     "react": "^18",
@@ -19,6 +20,7 @@
     "swiper": "^11.2.1"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

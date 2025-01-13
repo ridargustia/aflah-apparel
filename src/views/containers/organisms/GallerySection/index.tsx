@@ -26,7 +26,7 @@ const images: any = {
 
 const GallerySection = () => {
   return (
-    <div>
+    <div id="product-section">
       <div className="transform-none">
         <div className="relative">
           <div className="lg:py-24 py-16 mx-auto max-w-[1280px]">
