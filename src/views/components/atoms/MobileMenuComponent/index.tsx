@@ -34,7 +34,7 @@ const MobileMenuComponent = () => {
       </div>
       <div className="flex flex-col items-center ">
         <Link
-          href="#"
+          href="https://api.whatsapp.com/send?phone=6285712139792&text=Halo%20min%2C%20saya%20tau%20info%20dari%20website%20mau%20tanya-tanya%20mengenai%20custom%20jersey%20di%20Aflah%20apparel%20dong"
           className="rounded-full border-b-0 bg-green-500 py-2 px-6 text-gray-100 my-2 border-transparent text-lg font-medium tracking-wide"
         >
           Contact us

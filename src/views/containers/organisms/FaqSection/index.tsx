@@ -8,8 +8,8 @@ const FaqSection = () => {
       <div className="relative">
         <div className="lg:py-24 py-16 mx-auto max-w-[1280px]">
           <div className="flex flex-col items-center">
-            <h2 className="text-3xl text-center font-bold tracking-wide text-blue-950">
-              Frequently Asked Questions
+            <h2 className="text-3xl text-center font-bold tracking-wide text-blue-950 uppercase">
+              FAQ
             </h2>
           </div>
           <div className="mt-16 flex flex-wrap flex-row w-full md:px-14 px-0">
@@ -31,7 +31,7 @@ const FaqSection = () => {
                     })
                   }
                 >
-                  Question #1
+                  Bagaimana cara pesan jersey di AFLAH Apparel?
                   {accordion.question1 ? (
                     <svg
                       className="block size-4"
@@ -102,7 +102,7 @@ const FaqSection = () => {
                     })
                   }
                 >
-                  Question #2
+                  Apakah ada minimal order di AFLAH Apparel?
                   {accordion.question2 ? (
                     <svg
                       className="block size-4"
@@ -173,7 +173,7 @@ const FaqSection = () => {
                     })
                   }
                 >
-                  Question #3
+                  Apa keunggulan di AFLAH Apparel?
                   {accordion.question3 ? (
                     <svg
                       className="block size-4"
@@ -244,7 +244,7 @@ const FaqSection = () => {
                     })
                   }
                 >
-                  Question #4
+                  Apakah bisa mendapatkan free ongkir di AFLAH Apparel?
                   {accordion.question4 ? (
                     <svg
                       className="block size-4"
@@ -315,7 +315,7 @@ const FaqSection = () => {
                     })
                   }
                 >
-                  Question #5
+                  Apakah harganya bisa nego di AFLAH Apparel?
                   {accordion.question5 ? (
                     <svg
                       className="block size-4"

@@ -8,10 +8,15 @@ const ServiceSection = () => {
         <div className="relative">
           <div className="lg:py-24 py-16 mx-auto max-w-[1280px]">
             <div className="flex flex-col items-center">
-              <h2 className="text-5xl text-center font-bold tracking-wide text-blue-950">
-                Our Service
+              <h2 className="md:text-5xl text-3xl text-center font-bold tracking-wide text-blue-950 uppercase">
+                Our Services
               </h2>
-              <p className="mt-4 max-w-[25rem] text-center font-medium text-gray-500">
+              <p
+                className="md:text-lg text-sm mt-4 max-w-[25rem] text-center font-medium text-gray-500"
+                data-tooltip-id="image-tooltip"
+                data-tooltip-content="T3"
+                data-tooltip-place="bottom"
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                 Ducimus.
               </p>
@@ -22,12 +27,22 @@ const ServiceSection = () => {
                 data-aos="fade-up"
                 data-aos-duration="1000"
               >
-                <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
-                  <div className="shrink-0 rounded-full border p-5 text-center">
-                    <LiaTshirtSolid className="text-3xl text-indigo-600" />
+                <div className="flex flex-row items-start text-left mx-4 h-full py-8 md:px-2 px-0">
+                  <div
+                    className="shrink-0 rounded-full border p-5 text-center"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="A2"
+                    data-tooltip-place="bottom"
+                  >
+                    <LiaTshirtSolid className="md:text-3xl text-xl text-indigo-600" />
                   </div>
-                  <div className="ml-4 mt-2">
-                    <span className="mt-4 text-2xl font-semibold text-gray-800 leading-4 tracking-wide">
+                  <div
+                    className="ml-4 mt-2"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="T4"
+                    data-tooltip-place="bottom"
+                  >
+                    <span className="mt-4 md:text-2xl text-xl font-semibold text-gray-800 leading-4 tracking-wide">
                       Custom Jersey
                     </span>
                     <p className="mt-4 font-medium leading-8 text-gray-500">
@@ -43,13 +58,23 @@ const ServiceSection = () => {
                 data-aos-duration="1000"
                 data-aos-delay="100"
               >
-                <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
-                  <div className="shrink-0 rounded-full border p-5 text-center">
-                    <LiaTshirtSolid className="text-3xl text-indigo-600" />
+                <div className="flex flex-row items-start text-left mx-4 h-full py-8 md:px-2 px-0">
+                  <div
+                    className="shrink-0 rounded-full border p-5 text-center"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="A3"
+                    data-tooltip-place="bottom"
+                  >
+                    <LiaTshirtSolid className="md:text-3xl text-xl text-indigo-600" />
                   </div>
-                  <div className="ml-4 mt-2">
-                    <span className="mt-4 text-2xl font-semibold text-gray-800 leading-4 tracking-wide">
-                      Custom Jersey
+                  <div
+                    className="ml-4 mt-2"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="T5"
+                    data-tooltip-place="bottom"
+                  >
+                    <span className="mt-4 md:text-2xl text-xl font-semibold text-gray-800 leading-4 tracking-wide">
+                      Jasa Print & Press
                     </span>
                     <p className="mt-4 font-medium leading-8 text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -64,13 +89,23 @@ const ServiceSection = () => {
                 data-aos-duration="1000"
                 data-aos-delay="200"
               >
-                <div className="flex flex-row items-start text-left mx-4 h-full py-8 px-2">
-                  <div className="shrink-0 rounded-full border p-5 text-center">
-                    <LiaTshirtSolid className="text-3xl text-indigo-600" />
+                <div className="flex flex-row items-start text-left mx-4 h-full py-8 md:px-2 px-0">
+                  <div
+                    className="shrink-0 rounded-full border p-5 text-center"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="A4"
+                    data-tooltip-place="bottom"
+                  >
+                    <LiaTshirtSolid className="md:text-3xl text-xl text-indigo-600" />
                   </div>
-                  <div className="ml-4 mt-2">
-                    <span className="mt-4 text-2xl font-semibold text-gray-800 leading-4 tracking-wide">
-                      Custom Jersey
+                  <div
+                    className="ml-4 mt-2"
+                    data-tooltip-id="image-tooltip"
+                    data-tooltip-content="T6"
+                    data-tooltip-place="bottom"
+                  >
+                    <span className="mt-4 md:text-2xl text-xl font-semibold text-gray-800 leading-4 tracking-wide">
+                      Sewa Jersey
                     </span>
                     <p className="mt-4 font-medium leading-8 text-gray-500">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit.

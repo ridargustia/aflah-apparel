@@ -14,11 +14,11 @@ const Navbar = () => {
     <div>
       <section className="transform-none">
         <header
-          className={`w-full max-w-none pt-0 sm:px-20 px-10 mx-auto flex items-center justify-between top-0 left-0 fixed bg-slate-600`}
+          className={`w-full max-w-none pt-0 sm:px-20 px-10 mx-auto flex items-center justify-between top-0 left-0 fixed bg-slate-600 z-10`}
         >
           <div className="flex flex-1 items-center justify-between py-4">
             <Link
-              href="#"
+              href="/"
               className="flex items-center text-gray-100 font-semibold ml-0 text-2xl my-0 mx-6 border-transparent tracking-wide no-underline"
             >
               <Image
@@ -42,7 +42,7 @@ const Navbar = () => {
             </div>
             <div className="lg:inline-block hidden">
               <Link
-                href="#"
+                href="https://api.whatsapp.com/send?phone=6285712139792&text=Halo%20min%2C%20saya%20tau%20info%20dari%20website%20mau%20tanya-tanya%20mengenai%20custom%20jersey%20di%20Aflah%20apparel%20dong"
                 className="text-gray-100 rounded-3xl mx-0 bg-green-500 py-2 px-5 lg:my-0 lg:mx-0 text-sm border-transparent font-medium tracking-wide no-underline"
               >
                 Contact us

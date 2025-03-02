@@ -20,7 +20,7 @@ const images: any = {
   exampleGallery7: exampleGallery7,
 };
 
-const SewaJerseyPage = () => {
+const ProductsPage = () => {
   return (
     <AppShell>
       <div className="md:px-10 px-0 pt-10">
@@ -30,25 +30,31 @@ const SewaJerseyPage = () => {
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Sewa Jersey
+            Our Products
           </h2>
           <p
             className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
+            data-tooltip-id="image-tooltip"
+            data-tooltip-content="T13"
+            data-tooltip-place="bottom"
           >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus.
           </p>
         </div>
-        <div className="mt-16 flex flex-wrap flex-row sm:justify-start justify-center w-full h-auto">
+        <div className="mt-16 flex flex-wrap flex-row justify-start w-full h-auto">
           {product?.map((data: any) => (
             <div
               key={data.id}
-              className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full lg:px-2 sm:px-1 px-0 py-9"
+              className="lg:w-1/4 md:w-1/3 w-1/2 lg:px-2 sm:px-1 px-0.5 sm:py-9 py-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={data.id * 100}
+              data-tooltip-id="image-tooltip"
+              data-tooltip-content="T14 - Product List"
+              data-tooltip-place="bottom"
             >
               <div className="w-full max-w-full">
                 <Image
@@ -56,17 +62,14 @@ const SewaJerseyPage = () => {
                   alt="gallery"
                   width={200}
                   height={200}
-                  className="rounded-md bg-cover bg-center w-full h-64"
+                  className="rounded-md bg-cover bg-center w-full lg:h-64 md:h-48 h-40"
                 />
-                <div className="mt-4 text-sm font-medium text-gray-500">
-                  {data.price.toLocaleString("id-ID", {
-                    style: "currency",
-                    currency: "IDR",
-                  })}
-                </div>
-                <h4 className="mt-2 text-base font-semibold leading-relaxed text-gray-700">
-                  {data.desc}
+                <h4 className="sm:mt-4 mt-2 sm:text-base text-sm font-semibold leading-relaxed text-gray-700">
+                  {data.title}
                 </h4>
+                <div className="sm:mt-2 mt-1 sm:text-sm text-xs font-medium text-gray-500">
+                  {data.desc}
+                </div>
               </div>
             </div>
           ))}
@@ -76,4 +79,4 @@ const SewaJerseyPage = () => {
   );
 };
 
-export default SewaJerseyPage;
+export default ProductsPage;

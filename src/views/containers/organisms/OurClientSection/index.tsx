@@ -8,11 +8,11 @@ import exampleGallery5 from "../../../../../public/assets/images/gallery/kelas-5
 import exampleGallery6 from "../../../../../public/assets/images/gallery/kelas-6.jpg";
 import exampleGallery7 from "../../../../../public/assets/images/gallery/kelas-7.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
+import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/pagination";
-import { gallery } from "@/utils/data/static";
+import { ourClient } from "@/utils/data/static";
 
 const images: any = {
   exampleGallery1: exampleGallery1,
@@ -24,49 +24,59 @@ const images: any = {
   exampleGallery7: exampleGallery7,
 };
 
-const GallerySection = () => {
+const OurClientSection = () => {
   return (
     <div id="product-section">
       <div className="transform-none">
         <div className="relative">
           <div className="lg:py-24 py-16 mx-auto max-w-[1280px]">
             <div className="flex flex-col items-center">
-              <h2 className="text-5xl text-center font-bold tracking-wide text-blue-950">
-                Our Product
+              <h2 className="md:text-4xl text-3xl text-center font-bold tracking-wide text-blue-950 uppercase">
+                Our Client
               </h2>
-              <p className="mt-4 max-w-[25rem] text-center font-medium text-gray-500">
+              <p
+                className="md:text-lg text-base mt-4 max-w-[25rem] text-center font-medium text-gray-500"
+                data-tooltip-id="image-tooltip"
+                data-tooltip-content="T11"
+                data-tooltip-place="bottom"
+              >
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
               </p>
             </div>
-            <div className="mt-16 flex flex-wrap flex-row md:justify-between justify-center w-full h-[430px]">
+            <div className="mt-16 flex flex-wrap flex-row md:justify-between justify-center w-full h-auto">
               <Swiper
                 slidesPerView={1}
                 spaceBetween={10}
-                pagination={{
-                  clickable: true,
+                autoplay={{
+                  delay: 2500,
+                  disableOnInteraction: false,
                 }}
                 breakpoints={{
+                  0: {
+                    slidesPerView: 2,
+                    spaceBetween: 5,
+                  },
                   640: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
+                    slidesPerView: 3,
+                    spaceBetween: 5,
                   },
                   768: {
-                    slidesPerView: 2,
-                    spaceBetween: 40,
+                    slidesPerView: 4,
+                    spaceBetween: 10,
                   },
                   992: {
-                    slidesPerView: 2,
-                    spaceBetween: 50,
+                    slidesPerView: 5,
+                    spaceBetween: 10,
                   },
                   1200: {
-                    slidesPerView: 3,
-                    spaceBetween: 50,
+                    slidesPerView: 5,
+                    spaceBetween: 15,
                   },
                 }}
-                modules={[Pagination]}
+                modules={[Autoplay]}
                 className="mySwiper"
               >
-                {gallery.map((data) => {
+                {ourClient.map((data) => {
                   return (
                     <SwiperSlide key={data.id}>
                       <div className="max-w-full">
@@ -75,17 +85,11 @@ const GallerySection = () => {
                           alt="gallery"
                           width={200}
                           height={200}
-                          className="rounded-md bg-cover bg-center w-full h-64"
+                          className="rounded-md bg-cover bg-center w-full xl:h-60 md:h-48 h-44"
+                          data-tooltip-id="image-tooltip"
+                          data-tooltip-content="A8"
+                          data-tooltip-place="bottom"
                         />
-                        <div className="mt-4 text-sm font-medium text-gray-500">
-                          {data.price.toLocaleString("id-ID", {
-                            style: "currency",
-                            currency: "IDR",
-                          })}
-                        </div>
-                        <h4 className="mt-2 text-lg font-semibold leading-relaxed text-gray-700">
-                          {data.desc}
-                        </h4>
                       </div>
                     </SwiperSlide>
                   );
@@ -127,4 +131,4 @@ const GallerySection = () => {
   );
 };
 
-export default GallerySection;
+export default OurClientSection;

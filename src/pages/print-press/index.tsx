@@ -8,7 +8,7 @@ import exampleGallery4 from "../../../public/assets/images/gallery/kelas-4.jpg";
 import exampleGallery5 from "../../../public/assets/images/gallery/kelas-5.jpg";
 import exampleGallery6 from "../../../public/assets/images/gallery/kelas-6.jpg";
 import exampleGallery7 from "../../../public/assets/images/gallery/kelas-7.jpg";
-import { product } from "@/utils/data/static";
+import { printPress, product } from "@/utils/data/static";
 
 const images: any = {
   exampleGallery1: exampleGallery1,
@@ -20,35 +20,41 @@ const images: any = {
   exampleGallery7: exampleGallery7,
 };
 
-const CustomJerseyPage = () => {
+const PrintPressPage = () => {
   return (
     <AppShell>
-      <div className="md:px-10 px-0 pt-10">
+      <div className="lg:px-10 md:px-5 px-0 pt-10">
         <div className="flex flex-col items-center">
           <h2
             className="text-3xl text-center font-bold tracking-wide text-blue-950"
             data-aos="fade-up"
             data-aos-duration="1000"
           >
-            Custom Jersey
+            Jasa Print & Press
           </h2>
           <p
             className="mt-4 max-w-[25rem] text-center font-medium text-gray-500 text-sm"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-delay="100"
+            data-tooltip-id="image-tooltip"
+            data-tooltip-content="T15"
+            data-tooltip-place="bottom"
           >
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus.
           </p>
         </div>
         <div className="mt-16 flex flex-wrap flex-row sm:justify-start justify-center w-full h-auto">
-          {product?.map((data: any) => (
+          {printPress?.map((data: any) => (
             <div
               key={data.id}
-              className="lg:w-1/4 md:w-1/3 sm:w-1/2 w-full lg:px-2 sm:px-1 px-0 py-9"
+              className="md:w-1/4 w-1/2 lg:px-2 sm:px-1 px-0.5 lg:py-9 py-4"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay={data.id * 100}
+              data-tooltip-id="image-tooltip"
+              data-tooltip-content={`P${data.id}`}
+              data-tooltip-place="bottom"
             >
               <div className="w-full max-w-full">
                 <Image
@@ -56,17 +62,14 @@ const CustomJerseyPage = () => {
                   alt="gallery"
                   width={200}
                   height={200}
-                  className="rounded-md bg-cover bg-center w-full h-64"
+                  className="rounded-md bg-cover bg-center w-full lg:h-64 md:h-40 h-40"
                 />
-                <div className="mt-4 text-sm font-medium text-gray-500">
-                  {data.price.toLocaleString("id-ID", {
-                    style: "currency",
-                    currency: "IDR",
-                  })}
-                </div>
-                <h4 className="mt-2 text-base font-semibold leading-relaxed text-gray-700">
-                  {data.desc}
+                <h4 className="sm:mt-4 mt-2 lg:text-base text-sm font-semibold leading-relaxed text-gray-700">
+                  {data.title}
                 </h4>
+                <div className="sm:mt-2 mt-1 lg:text-sm text-xs font-medium text-gray-500">
+                  {data.desc}
+                </div>
               </div>
             </div>
           ))}
@@ -76,4 +79,4 @@ const CustomJerseyPage = () => {
   );
 };
 
-export default CustomJerseyPage;
+export default PrintPressPage;

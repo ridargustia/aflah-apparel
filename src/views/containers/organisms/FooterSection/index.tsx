@@ -2,8 +2,7 @@ import Image from "next/image";
 import React from "react";
 import companyLogo from "../../../../../public/assets/images/company/company-logo2.png";
 import Link from "next/link";
-import { FaFacebookF, FaTwitter } from "react-icons/fa";
-import { IoLogoYoutube } from "react-icons/io5";
+import { FaFacebookF, FaInstagram, FaTiktok } from "react-icons/fa";
 
 const FooterSection = () => {
   return (
@@ -23,28 +22,33 @@ const FooterSection = () => {
                 Aflah Apparel
               </h5>
             </div>
-            <p className="md:ml-0 md:mr-4 mt-4 max-w-80 text-sm font-medium text-gray-700">
+            <p
+              className="md:ml-0 md:mr-4 mt-4 max-w-80 text-sm font-medium text-gray-700"
+              data-tooltip-id="image-tooltip"
+              data-tooltip-content="T12 - Alamat & No. Telepon"
+              data-tooltip-place="bottom"
+            >
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos cum
               officiis aliquid ipsa cumque, quisquam eos? Sunt?
             </p>
             <div className="mt-4">
               <Link
                 className="mr-4 inline-block cursor-pointer rounded-full bg-gray-600 p-2 text-gray-300"
-                href="#"
+                href="https://www.facebook.com/profile.php?id=61553701864207"
               >
                 <FaFacebookF />
               </Link>
               <Link
                 className="mr-4 inline-block cursor-pointer rounded-full bg-gray-600 p-2 text-gray-300"
-                href="#"
+                href="https://www.tiktok.com/@aflah.apparel"
               >
-                <FaTwitter />
+                <FaTiktok />
               </Link>
               <Link
                 className="mr-4 inline-block cursor-pointer rounded-full bg-gray-600 p-2 text-gray-300"
-                href="#"
+                href="https://www.instagram.com/aflahapparel/"
               >
-                <IoLogoYoutube />
+                <FaInstagram />
               </Link>
             </div>
           </div>
@@ -52,28 +56,23 @@ const FooterSection = () => {
             <h5 className="font-semibold">Menu</h5>
             <ul className="mt-4 text-sm font-medium">
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
+                <Link href="/" className="border-transparent pb-1">
                   Home
                 </Link>
               </li>
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  Custom Jersey
+                <Link href="/products" className="border-transparent pb-1">
+                  Products
                 </Link>
               </li>
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  Retail Jersey
+                <Link href="/print-press" className="border-transparent pb-1">
+                  Jasa Print & Press
                 </Link>
               </li>
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  Sewa Jersey
-                </Link>
-              </li>
-              <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  FAQ
+                <Link href="/gallery" className="border-transparent pb-1">
+                  Gallery
                 </Link>
               </li>
             </ul>
@@ -82,23 +81,27 @@ const FooterSection = () => {
             <h5 className="font-semibold">Media Sosial</h5>
             <ul className="mt-4 text-sm font-medium">
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  Instagram
-                </Link>
-              </li>
-              <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
+                <Link
+                  href="https://www.facebook.com/profile.php?id=61553701864207"
+                  className="border-transparent pb-1"
+                >
                   Facebook
                 </Link>
               </li>
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
+                <Link
+                  href="https://www.tiktok.com/@aflah.apparel"
+                  className="border-transparent pb-1"
+                >
                   Tiktok
                 </Link>
               </li>
               <li className="mt-3">
-                <Link href="#" className="border-transparent pb-1">
-                  Twitter
+                <Link
+                  href="https://www.instagram.com/aflahapparel/"
+                  className="border-transparent pb-1"
+                >
+                  Instagram
                 </Link>
               </li>
             </ul>

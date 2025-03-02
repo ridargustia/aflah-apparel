@@ -1,4 +1,3 @@
-import HeaderComponent from "@/views/components/atoms/HeaderComponent";
 import AppShell from "@/views/containers/templates/AppShell";
 import Image from "next/image";
 import React from "react";
@@ -9,6 +8,17 @@ import exampleGallery4 from "../../../public/assets/images/gallery/kelas-4.jpg";
 import exampleGallery5 from "../../../public/assets/images/gallery/kelas-5.jpg";
 import exampleGallery6 from "../../../public/assets/images/gallery/kelas-6.jpg";
 import exampleGallery7 from "../../../public/assets/images/gallery/kelas-7.jpg";
+import { gallery } from "@/utils/data/static";
+
+const images: any = {
+  exampleGallery1: exampleGallery1,
+  exampleGallery2: exampleGallery2,
+  exampleGallery3: exampleGallery3,
+  exampleGallery4: exampleGallery4,
+  exampleGallery5: exampleGallery5,
+  exampleGallery6: exampleGallery6,
+  exampleGallery7: exampleGallery7,
+};
 
 const GalleryPage = () => {
   return (
@@ -26,131 +36,27 @@ const GalleryPage = () => {
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-delay="100"
+          data-tooltip-id="image-tooltip"
+          data-tooltip-content="T16"
+          data-tooltip-place="bottom"
         >
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus.
         </p>
       </div>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 md:px-10 px-0 py-20">
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery1}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="100"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery2}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="200"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery3}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="300"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery4}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="400"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery5}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery6}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="600"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery7}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="700"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery1}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="800"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery2}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="900"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery3}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1000"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery4}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1100"
-        />
-        <Image
-          width={200}
-          height={200}
-          className="w-full size-40 object-cover rounded-md"
-          src={exampleGallery5}
-          alt="Gallery Image"
-          data-aos="fade-up"
-          data-aos-duration="1000"
-          data-aos-delay="1200"
-        />
+      <div className="grid md:grid-cols-4 grid-cols-2 md:gap-2 gap-1 lg:px-20 md:px-8 px-0 py-20">
+        {gallery.map((data: any) => (
+          <Image
+            key={data.id}
+            width={200}
+            height={200}
+            className="w-full lg:h-56 md:h-44 h-40 object-cover rounded-md"
+            src={images[data.image]}
+            alt={data.title}
+            data-tooltip-id="image-tooltip"
+            data-tooltip-content="A9"
+            data-tooltip-place="bottom"
+          />
+        ))}
       </div>
     </AppShell>
   );

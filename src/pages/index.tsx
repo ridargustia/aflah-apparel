@@ -1,6 +1,6 @@
 import FaqSection from "@/views/containers/organisms/FaqSection";
 import FooterSection from "@/views/containers/organisms/FooterSection";
-import GallerySection from "@/views/containers/organisms/GallerySection";
+import OurClientSection from "@/views/containers/organisms/OurClientSection";
 import HeroSection from "@/views/containers/organisms/HeroSection";
 import ServiceSection from "@/views/containers/organisms/ServiceSection";
 import Head from "next/head";
@@ -8,6 +8,7 @@ import icon from "../../public/assets/images/company/company-logo.png";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import WhySection from "@/views/containers/organisms/WhySection";
 
 export default function Home() {
   useEffect(() => {
@@ -25,7 +26,8 @@ export default function Home() {
       <main className={`min-h-screen overflow-hidden p-8`}>
         <HeroSection />
         <ServiceSection />
-        <GallerySection />
+        <WhySection />
+        <OurClientSection />
         <FaqSection />
         <FooterSection />
       </main>

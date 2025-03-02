@@ -50,7 +50,7 @@ const HeaderComponent = () => {
         </div>
         <div className="lg:inline-block hidden">
           <Link
-            href="#"
+            href="https://api.whatsapp.com/send?phone=6285712139792&text=Halo%20min%2C%20saya%20tau%20info%20dari%20website%20mau%20tanya-tanya%20mengenai%20custom%20jersey%20di%20Aflah%20apparel%20dong"
             className="text-gray-100 rounded-3xl mx-0 bg-green-500 py-2 px-5 lg:my-0 lg:mx-0 text-sm border-transparent font-medium tracking-wide no-underline"
           >
             Contact us
